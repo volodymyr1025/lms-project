@@ -1,0 +1,28 @@
+.custom-slider-container {
+    position: relative;
+    margin: auto;
+  }
+  
+  .custom-prev-button, .custom-next-button {
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: rgba(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .custom-prev-button {
+    right: 100px;  /* Adjust the left position as needed */
+  }
+  
+  .custom-next-button {
+    right: 0px;  /* Adjust the right position as needed */
+  }
+  
