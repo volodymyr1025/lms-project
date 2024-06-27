@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="container mx-auto bg-theme-orange rounded-t-[100px]">
+    <footer className="container mx-auto bg-theme-orange rounded-t-[100px] relative z-10">
       <div className="flex flex-col text-black pl-16 pt-20 pr-32 mt-10">
         <p className="text-base">LOGO</p>
         <div className="flex flex-row justify-between mb-12">

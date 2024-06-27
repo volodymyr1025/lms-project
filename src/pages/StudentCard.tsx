@@ -13,7 +13,7 @@ const StudentCard: React.FC<StudentCardProps> = ({
   name
 }) => {
   return (
-    <div className="rounded-[30px] pt-5 pl-5 pr-1 pb-4 border-2 w-[208px] mb-3 border-solid border-black">
+    <div className="rounded-[30px] pt-5 pl-5 pr-1 pb-4 border-2 w-[208px] mb-3 border-solid border-black bg-white">
       <img src={imageSrc} alt="Student" />
       <p className="text-base opacity-60 mb-7">
         "{quote}"

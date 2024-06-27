@@ -8,10 +8,16 @@ import Woman1 from "../assets/woman_1.svg";
 import Star20 from "../assets/star_20.svg";
 import Vector1 from "../assets/vector_1.svg";
 import Vector2 from "../assets/vector_2.svg";
+import Vector3 from "../assets/vector_3.svg";
 import Vector4 from "../assets/vector_4.svg";
 import Vector5 from "../assets/vector_5.svg";
 import Vector10 from "../assets/vector_10.svg";
+import Star3 from "../assets/star_3.svg";
+import Star4 from "../assets/star_4.svg";
+import Star5 from "../assets/star_5.svg";
+import Star6 from "../assets/star_6.svg";
 import Star7 from "../assets/star_7.svg";
+import Star8 from "../assets/star_8.svg";
 import Graduation_Hat_1 from "../assets/graduation_hat_1.svg";
 import Book1 from "../assets/book_1.svg";
 import User2 from "../assets/user_2.svg";
@@ -43,7 +49,7 @@ import StudentCard from "./StudentCard";
 
 const Dashboard: React.FC = () => {
   return (
-    <div>
+    <div className="relative">
       <Navbar />
       <header className="bg-theme-blue text-center pb-[113px]">
         <div className="container mx-auto flex flex-row justify-between relative">
@@ -144,13 +150,14 @@ const Dashboard: React.FC = () => {
             <h2 className="text-2xl font-mali text-center font-medium mb-4">
               Mācību priekšmeti
             </h2>
-            <p className="text-base leading-[163%] w-[766px] text-center mx-auto opacity-70">
+            <p className="text-base leading-[163%] w-[766px] text-center mx-auto opacity-70 relative z-10">
               Atklājiet mūsu vispieprasītākos mācību priekšmetus. Gūstiet
               panākumus ikvienā jūsu izglītības ceļojuma posmā.
             </p>
             <div className="mt-20">
               <ClassCarousel />
             </div>
+            <div className="absolute w-[33%] h-[43px] bg-[#E7E8FE] rounded-l-full top-[120px] right-0" />
             <img src={Vector10} alt="Vector 10" className="mx-auto" />
             <div className="absolute -bottom-[116px] rounded-full bg-theme-orange w-[233px] h-[233px]" />
           </div>
@@ -158,12 +165,12 @@ const Dashboard: React.FC = () => {
         <img
           src={Star7}
           alt="Star 7"
-          className="absolute top-[700px] right-[35px]"
+          className="absolute top-[700px] right-0"
         />
         <section className="bg-white relative z-10 pt-24 pb-[156px]">
-          <div className="container mx-auto">
+          <div className="container relative mx-auto">
             <p className="font-mali font-medium text-2xl">Kāpēc Harmonija A?</p>
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-row justify-between relative z-10">
               <div className="pt-[149px]">
                 <div className="flex flex-row w-[767px] mb-10">
                   <div className="bg-[#F1FF9D] flex-shrink-0 rounded-full w-[100px] h-[100px] flex justify-center items-center">
@@ -225,7 +232,7 @@ const Dashboard: React.FC = () => {
                     <img
                       src={PlayButton1}
                       alt="Play Button 1"
-                      className="w-[53px] h-[53px]"
+                      className="w-[53px] h-[53px] ml-[10px]"
                     />
                   </div>
                   <div className="grow-0">
@@ -240,7 +247,7 @@ const Dashboard: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col w-[674px]">
-                <div className="flex flex-row justify-between mb-7">
+                <div className="flex flex-row justify-between mb-7 z-10">
                   <div
                     className="w-[440px] pt-9 pl-4 pr-6 pb-8 rounded-r-[30px]"
                     style={{
@@ -274,7 +281,7 @@ const Dashboard: React.FC = () => {
                     </button>
                   </div>
                 </div>
-                <div className="flex flex-row justify-between mb-7">
+                <div className="flex flex-row justify-between mb-7 z-10">
                   <div className="bg-theme-blue w-[323px] rounded-[30px] py-3 px-[54px]">
                     <p className="text-[60px] font-medium text-center">18~</p>
                     <p className="text-base opacity-60 text-center">
@@ -288,7 +295,7 @@ const Dashboard: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-row  min-w-[674px] justify-center items-center relative h-[328px]">
+                <div className="flex flex-row  min-w-[674px] justify-center items-center relative h-[328px] z-10">
                   <img
                     src={Teachers_background_2}
                     alt="Teachers_background_2"
@@ -300,17 +307,26 @@ const Dashboard: React.FC = () => {
                     Reģistrēties
                   </button>
                 </div>
+                <div className="absolute rounded-full w-[200px] h-[200px] bg-theme-blue -top-[100px] right-[35px]" />
               </div>
             </div>
+            <img
+              src={Star3}
+              alt="Harmony"
+              className="absolute top-[190px] left-[700px]"
+            />
             <img
               src={Vector2}
               alt="Vector 2"
               className="w-[249px] h-[143px] ml-[700px] -mt-16"
             />
+            <div className="absolute rounded-full w-[200px] h-[200px] bg-theme-blue -bottom-[140px] -right-[100px]" />
           </div>
+          <div className="w-[12%] bg-theme-blue h-[43px] rounded-r-full" />
+          <div className="absolute rounded-full w-[200px] h-[200px] bg-[#FFB5B5] top-[257px] -left-[83px]" />
         </section>
-        <section className="relative pb-[250px]">
-          <div className="bg-theme-blue container mx-auto rounded-[70px] flex flex-col pt-[70px] pl-[136px] pb-[83px] relative">
+        <section className="relative pb-[50px]">
+          <div className="bg-theme-blue container mx-auto rounded-[70px] flex flex-col pt-[70px] pl-[136px] pb-[83px] relative z-10">
             <p className="text-2xl font-mali font-medium leading-[105%]">
               Sāc mācīties jau šodien!
             </p>
@@ -327,17 +343,22 @@ const Dashboard: React.FC = () => {
               className="absolute right-0 bottom-0"
             />
           </div>
-          <img src={Vector5} alt="Vector 5" />
+          <div className="container mx-auto relative">
+            <img src={Vector5} alt="Vector 5" className="ml-40 pt-12"/>
+            <div className="absolute left-[40%] -top-[63px] bg-[#FFB5B5] w-[200px] h-[200px] rounded-full" />
+          </div>
+          <img src={Star6} alt="Class" className="absolute top-[294px]" />
         </section>
-        <section className="pb-[200px]">
+        <section className="pb-[200px] relative">
           <div className="container mx-auto mb-6">
             <p className="text-2xl font-mali font-medium mx-auto max-w-[554px]">
               Īsti skolēni, Īsti rezultāti
             </p>
           </div>
-          <div className="w-full flex">
-            <div className="mx-auto flex flex-row">
-              <div className="mt-[93px] mr-3">
+          <div className="w-full flex relative">
+            <div className="absolute w-[38%] bg-[#E7E8FE] rounded-r-full h-[43px]" />
+            <div className="mx-auto flex flex-row relative">
+              <div className="mt-[93px] mr-3 z-10">
                 <StudentCard
                   imageSrc={Ellipse29}
                   quote="Improved grammar & vocabulary! Aced my college essays, thanks!"
@@ -349,7 +370,7 @@ const Dashboard: React.FC = () => {
                   name="Sam Smith"
                 />
               </div>
-              <div className="mt-[51px] mr-3">
+              <div className="mt-[51px] mr-3 z-10">
                 <StudentCard
                   imageSrc={Ellipse43}
                   quote="Interactive lessons made physics fun! Now I can explain it to anyone."
@@ -361,7 +382,7 @@ const Dashboard: React.FC = () => {
                   name="Noor Khan"
                 />
               </div>
-              <div className="mt-[133px] mr-3">
+              <div className="mt-[133px] mr-3 z-10">
                 <StudentCard
                   imageSrc={Ellipse33}
                   quote="Struggled before, now I'm confident tackling any problem."
@@ -373,7 +394,7 @@ const Dashboard: React.FC = () => {
                   name="Alisha Willi"
                 />
               </div>
-              <div className="mt-[52px] mr-3">
+              <div className="mt-[52px] mr-3 z-10">
                 <StudentCard
                   imageSrc={Ellipse35}
                   quote="Interactive labs made learning engaging. Now I love the subject!"
@@ -385,7 +406,7 @@ const Dashboard: React.FC = () => {
                   name="Anika Chopra"
                 />
               </div>
-              <div className="mt-[150px] mr-3">
+              <div className="mt-[150px] mr-3 z-10">
                 <StudentCard
                   imageSrc={Ellipse37}
                   quote="Expert instructors made complex concepts surprisingly clear."
@@ -397,7 +418,7 @@ const Dashboard: React.FC = () => {
                   name="Ralph Sydney"
                 />
               </div>
-              <div className="mr-3">
+              <div className="mr-3 z-10">
                 <StudentCard
                   imageSrc={Ellipse39}
                   quote="Interactive platform made learning physics interactive and fun."
@@ -409,7 +430,7 @@ const Dashboard: React.FC = () => {
                   name="Martha Lee"
                 />
               </div>
-              <div className="mt-[104px] mr-9">
+              <div className="mt-[104px] mr-9 z-10">
                 <StudentCard
                   imageSrc={Ellipse41}
                   quote="Highly recommend! My problem-solving skills have improved immensely."
@@ -421,6 +442,9 @@ const Dashboard: React.FC = () => {
                   name="Sofia Mads"
                 />
               </div>
+              <div className="bg-[#FFB5B5] w-[200px] h-[200px] rounded-full absolute -top-[24px] right-[265px]" />
+              <div className="bg-[#FFB5B5] w-[200px] h-[200px] rounded-full absolute -bottom-[163px] right-[600px]" />
+              <img src={Star4} alt="Class" className="absolute bottom-[20px] left-[300px]" />
               <div className="my-auto">
                 <button className="w-[100px] h-[100px] rounded-full bg-[#F1FF9D] border-2 border-solid border-black flex justify-center items-center">
                   <img src={RightArrow} alt="Arrow" />
@@ -428,8 +452,9 @@ const Dashboard: React.FC = () => {
               </div>
             </div>
           </div>
+          <img src={Vector3} alt="Class" className="absolute bottom-[234px] right-[15px]" />
         </section>
-        <section>
+        <section className="relative pb-[150px]">
           <div className="container mx-auto">
             <div className="flex flex-row justify-between z-10 relative">
               <img src={Training} alt="Training" />
@@ -447,9 +472,14 @@ const Dashboard: React.FC = () => {
             </div>
             <img src={Vector4} alt="class" className="-mt-2 ml-20" />
           </div>
+          <img src={Star5} alt="Class" className="absolute left-0 top-[82px]" />
+          <div className="absolute w-[26%] bg-[#E7E8FE] right-0 bottom-[190px] rounded-l-full h-[43px]" />
+          <img src={Star8} alt="Class" className="absolute -bottom-[85px] right-[40%]" />
         </section>
       </main>
       <Footer />
+      <div className="absolute bg-[#FFB5B5] w-[200px] h-[200px] -left-[38px] bottom-[234px] rounded-full" />
+      <div className="absolute bg-[#58CFFB] h-[43px] w-[400px] bottom-[353px] right-0" />
     </div>
   );
 };
