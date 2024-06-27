@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AppBar, Toolbar, Typography, Button } from "@mui/material";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 
 const Navbar: React.FC = () => {
   const [selected, setSelected] = useState<string>("Sākums");

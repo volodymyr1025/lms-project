@@ -38,7 +38,7 @@ import Ellipse42 from "../assets/ellipse_42.svg";
 import Ellipse43 from "../assets/ellipse_43.svg";
 import RightArrow from "../assets/right_arrow_1.svg";
 import Training from "../assets/training.svg";
-import Teachers_background_2_covered from "../assets/teachers_backgroud_2_covered.svg";
+// import Teachers_background_2_covered from "../assets/teachers_backgroud_2_covered.svg";
 import StudentCard from "./StudentCard";
 
 const Dashboard: React.FC = () => {
