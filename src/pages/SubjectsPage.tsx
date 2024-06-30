@@ -13,7 +13,7 @@ import Star20 from "../assets/star_20.svg";
 import Vector7 from "../assets/vector_7.svg";
 
 const SubjectsPage = () => {
-  const [selectedOption, setSelectedOption] = useState<string>("");
+  const [_selectedOption, setSelectedOption] = useState<string>("");
 
   const handleSelectChange = (value: string) => {
     setSelectedOption(value);
