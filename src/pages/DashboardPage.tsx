@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../shared-components/Navbar";
-import Footer from "../shared-components/Footer";
 import Mask_Group from "../assets/mask_group.svg";
 import ClassCarousel from "./ClassCarousel";
 import Star2 from "../assets/star_2.svg";
@@ -44,17 +42,15 @@ import Ellipse42 from "../assets/ellipse_42.svg";
 import Ellipse43 from "../assets/ellipse_43.svg";
 import RightArrow from "../assets/right_arrow_1.svg";
 import Training from "../assets/training.svg";
-// import Teachers_background_2_covered from "../assets/teachers_backgroud_2_covered.svg";
 import StudentCard from "./StudentCard";
 
-const Dashboard: React.FC = () => {
+const DashboardPage: React.FC = () => {
   return (
     <div className="relative">
-      <Navbar />
       <header className="bg-theme-blue text-center pb-[113px]">
         <div className="container mx-auto flex flex-row justify-between relative">
-          <div className="w-[695px] pt-[96px]">
-            <h1 className="text-2xl text-left font-mali">
+          <div className="max-w-[695px] pt-[96px]">
+            <h1 className="text-2xl text-left font-mali font-medium">
               Privātstundas, Kas Padara Mācības Vieglas Un Aizraujošas
             </h1>
             <p className="text-base text-left mb-7">
@@ -326,26 +322,30 @@ const Dashboard: React.FC = () => {
           <div className="absolute rounded-full w-[200px] h-[200px] bg-[#FFB5B5] top-[257px] -left-[83px]" />
         </section>
         <section className="relative pb-[50px]">
-          <div className="bg-theme-blue container mx-auto rounded-[70px] flex flex-col pt-[70px] pl-[136px] pb-[83px] relative z-10">
-            <p className="text-2xl font-mali font-medium leading-[105%]">
-              Sāc mācīties jau šodien!
-            </p>
-            <p className="text-base opacity-60 max-w-[828px] mb-8">
-              Piedalieties nodarbībās, iemācaties jaunas zināšanas un iegūstiet
-              personīgu atbalstu no katra skolotāja!
-            </p>
-            <button className="bg-theme-orange font-mali text-black w-[280px] py-[18px] text-base rounded-full">
-              Pieslēgties
-            </button>
-            <img
-              src={Mask1}
-              alt="Mask 1"
-              className="absolute right-0 bottom-0"
-            />
+          <div className="container mx-auto">
+            <div className="bg-theme-blue mx-[120px] rounded-[70px] flex flex-col pt-[70px] pl-[136px] pb-[83px] relative z-10">
+              <p className="text-2xl font-mali font-medium leading-[105%]">
+                Sāc mācīties jau šodien!
+              </p>
+              <p className="text-base opacity-60 max-w-[828px] mb-8">
+                Piedalieties nodarbībās, iemācaties jaunas zināšanas un
+                iegūstiet personīgu atbalstu no katra skolotāja!
+              </p>
+              <button className="bg-theme-orange font-mali text-black w-[280px] py-[18px] text-base rounded-full">
+                Pieslēgties
+              </button>
+              <img
+                src={Mask1}
+                alt="Mask 1"
+                className="absolute right-0 bottom-0"
+              />
+            </div>
           </div>
-          <div className="container mx-auto relative">
-            <img src={Vector5} alt="Vector 5" className="ml-40 pt-12"/>
-            <div className="absolute left-[40%] -top-[63px] bg-[#FFB5B5] w-[200px] h-[200px] rounded-full" />
+          <div className="container mx-auto">
+            <div className="mx-[120px] relative">
+              <img src={Vector5} alt="Vector 5" className="ml-40 pt-12" />
+              <div className="absolute right-[30%] -top-[63px] bg-[#FFB5B5] w-[200px] h-[200px] rounded-full" />
+            </div>
           </div>
           <img src={Star6} alt="Class" className="absolute top-[294px]" />
         </section>
@@ -477,11 +477,10 @@ const Dashboard: React.FC = () => {
           <img src={Star8} alt="Class" className="absolute -bottom-[85px] right-[40%]" />
         </section>
       </main>
-      <Footer />
-      <div className="absolute bg-[#FFB5B5] w-[200px] h-[200px] -left-[38px] bottom-[234px] rounded-full" />
-      <div className="absolute bg-[#58CFFB] h-[43px] w-[400px] bottom-[353px] right-0" />
+      <div className="absolute bg-[#FFB5B5] w-[200px] h-[200px] -left-[38px] -bottom-[294px] rounded-full" />
+      <div className="absolute bg-[#58CFFB] h-[43px] w-[400px] -bottom-[180px] right-0" />
     </div>
   );
 };
 
-export default Dashboard;
+export default DashboardPage;

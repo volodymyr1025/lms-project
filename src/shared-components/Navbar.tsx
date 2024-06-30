@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { AppBar, Toolbar, Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [selected, setSelected] = useState<string>("Sākums");
 
   const menuItems = [
-    { name: "Sākums", href: "#home" },
-    { name: "Par mums", href: "#about" },
-    { name: "Cenas", href: "#pricing" },
-    { name: "Skolotāji", href: "#teachers" },
-    { name: "Kredīti", href: "#credits" },
+    { name: "Sākums", href: "home" },
+    { name: "Par mums", href: "/about" },
+    { name: "Cenas", href: "/pricing" },
+    { name: "Skolotāji", href: "/subjects" },
+    { name: "Kredīti", href: "/credits" },
   ];
 
   return (
@@ -18,9 +19,9 @@ const Navbar: React.FC = () => {
         <Typography variant="h6" className="text-base">LOGO</Typography>
         <nav className="flex justify-around items-center bg-white px-2 py-1 rounded-full">
           {menuItems.map((item) => (
-            <a
+            <NavLink
               key={item.name}
-              href={item.href}
+              to={item.href}
               onClick={() => setSelected(item.name)}
               className={`px-4 py-2 rounded-full font-mali text-base ${
                 selected === item.name
@@ -29,7 +30,7 @@ const Navbar: React.FC = () => {
               }`}
             >
               {item.name}
-            </a>
+            </NavLink>
           ))}
         </nav>
         <button className="bg-theme-orange font-mali text-white px-6 py-3 text-base rounded-full">
